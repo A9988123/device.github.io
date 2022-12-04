@@ -1,0 +1,201 @@
+﻿ <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>連結試算表 - 表單Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 連結Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <!-- CSS 格式修改 -->
+    <style>
+        .container-contact {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background-color: rgb(42, 165, 159);
+            width: 100%;
+        }
+        
+        .container-contact h3 {
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .btn {
+            width: 100%;
+            font-size: 20px;
+            margin: 20px 0px 20px 0px;
+            background-color: rgb(6, 117, 119);
+            color: rgb(255, 255, 255);
+            border-radius: 20px;
+            transition: 1s;
+        }
+        
+        .btn:hover {
+            background-color: rgb(178, 224, 84);
+            color: black;
+        }
+        
+        input {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-contact">
+        <h3>資訊申請-大陸廠牌設備均不得申請</h3>
+        <div class="row">
+            <!-- 第一欄位 -->
+            <div class="col-sm-2">
+
+            </div>
+            <!-- 第二欄位 -->
+            <div class="col-sm-8">
+                <form id="myForm">
+                    <div class="row">
+                        <!-- 第一個輸入 - 名字 -->
+                        <div class="col-sm-6 form-group">                                            
+                            <input class="form-control" id="name" name="name" placeholder="姓名" type="name" required>
+                        </div>
+                        <!-- 第二個輸入 - 階級 -->
+                        <div class="col-sm-6 form-group">                                         
+                            <input class="form-control" id="rank" name="rank" placeholder="階級(現階或外聘教官)" type="rank" required>
+                        </div
+                    <div class="row">
+                        <!-- 第三個輸入 - 學群 -->
+                        <div class="col-sm-6 form-group">                                            
+                            <input class="form-control" id="group" name="group" placeholder="兼課學群(外聘教官填寫)" type="group" required>
+                        </div>
+                        <!-- 第四個輸入 - 身分證字號 -->
+                        <div class="col-sm-6 form-group">                                         
+                            <input class="form-control" id="idcard" name="idcard" placeholder="身分證字號" type="idcard" required>
+                        </div>
+                    <div class="row">
+                        <!-- 第五個輸入 - 行動電話 -->
+                        <div class="col-sm-6 form-group">                                            
+                            <input class="form-control" id="tel" name="tel" placeholder="行動電話(09開頭)" type="tel" required>
+                        </div>
+                        <!-- 第六個輸入 - 未使用 -->       
+                        
+
+
+                    <div class="row">
+                        <!-- 智慧型手機申請 -->
+                        <div class="col-sm-4 form-group">  
+                        <br>
+                        <h10>智慧型手機</h10>
+                            <input class="form-control" id="tel_label" name="tel_label" placeholder="廠牌：APPLE" type="tel_label" required>
+                            <input class="form-control" id="tel_model" name="tel_model" placeholder="型號：IPHONE 11 " type="tel_model" required>
+                            <input class="form-control" id="tel_ver" name="tel_ver" placeholder="版本：15.3.2" type="tel_ver" required>
+                            <input class="form-control" id="tel_IMEI" name="tel_IMEI" placeholder="tel_IMEI：352824310852257" type="tel_IMEI" required>
+                            <input class="form-control" id="tel_mac" name="tel_mac" placeholder="WIFI：BC:09:63:47:32:16" type="tel_mac" required>
+                         </div>
+
+                        <!-- 筆記型電腦申請 -->
+                        <div class="col-sm-4 form-group">  
+                        <br>
+                        <h10>筆記型電腦</h10>
+                            <input class="form-control" id="pc_label" name="pc_label" placeholder="廠牌：MSI " type="pc_label" required>
+                            <input class="form-control" id="pc_model" name="pc_model" placeholder="型號：GF63 Thin 9SC-880TW " type="pc_model" required>
+                            <input class="form-control" id="pc_sn" name="pc_sn" placeholder="序號：K1910N3112544  (筆電外殼下方)" type="pc_sn" required>
+                            <input class="form-control" id="pc_mac" name="pc_mac" placeholder="乙太卡號：00-D8-61-11-F7-5B" type="pc_mac" required>
+                            
+                         </div>
+                        <!-- 行車紀錄器申請 -->
+                        <div class="col-sm-4 form-group">  
+                        <br>
+                        <h10>行車紀錄器</h10>
+                            <input class="form-control" id="car_label" name="car_label" placeholder="廠牌：天翰 " type="car_label" required>
+                            <input class="form-control" id="car_model" name="car_model" placeholder="型號：X-mini " type="car_model" required>
+                            <input class="form-control" id="car_sn" name="car_sn" placeholder="序號：0Q632004753" type="car_sn" required>
+                            <input class="form-control" id="car_sim" name="car_sim" placeholder="有無sim卡插槽" type="car_sim" required>
+                         </div>     
+                         
+                        <!-- 穿戴式裝置申請 -->
+                        <div class="col-sm-4 form-group">  
+                        <br>
+                        <h10>穿戴式裝置_手環</h10>
+                            <input class="form-control" id="ring_label" name="ring_label" placeholder="廠牌：Apple watch se " type="ring_label" required>
+                            <input class="form-control" id="ring_model" name="ring_model" placeholder="型號：A2473、A2474 " type="ring_model" required>
+                            <input class="form-control" id="ring_sn" name="ring_sn" placeholder="序號：G99D88DLQ88Y" type="ring_sn" required>
+                            <input class="form-control" id="ring_sim" name="ring_sim" placeholder="有無記憶卡插槽" type="ring_sim" required>
+                         </div>   
+                         
+                        <!-- 穿戴式裝置申請-其他_藍牙耳機 -->
+                        <div class="col-sm-4 form-group">  
+                        <br>
+                        <h10>穿戴式裝置_耳機</h10>
+                            <input class="form-control" id="ear_label" name="ear_label" placeholder="廠牌：APPLE Airpods 3 " type="ear_label" required>
+                            <input class="form-control" id="ear_model" name="ear_model" placeholder="型號：A2566 " type="ear_model" required>
+                            <input class="form-control" id="ear_sn" name="ear_sn" placeholder="序號：V4TIW24UTB" type="ear_sn" required>
+                            <input class="form-control" id="ear_sim" name="ear_sim" placeholder="有無記憶卡插槽" type="ear_sim" required>
+                         </div>  
+
+
+                        <div class="col-sm-12 form-group">
+                            <button class="btn " type="submit" id="submitButton">送出Submit</button>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+                </form>
+            </div>
+            <!-- 第三欄位 -->
+            <div class="col-sm-2">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript程式 -->
+    <script>
+        // 抓輸入的值
+
+        function getValues() {
+
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var tel = document.getElementById("tel");
+            var mac = document.getElementById("mac");
+            var comments = document.getElementById("comments");
+
+
+
+            var rowData = {
+                name: name.value,
+                email: email.value,
+                tel: tel.value,
+                mac: mac.value,
+                comments: comments.value
+
+            };
+
+            // 上傳資料
+            google.script.run.addData(rowData);
+            // 清除表單上的資料
+            document.getElementById("myForm").reset();
+            // 完成後的訊息
+            alert("謝謝您的訊息，我們會儘快處理您的留言，謝謝！");
+        }
+
+        document.getElementById("submitButton").addEventListener("click", getValues);
+    </script>
+</body>
+
+</html>
+
+
+      
